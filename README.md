@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [code](https://your-solution-url.com)
+- Solution URL: [code](https://github.com/phangtono/Interactive-rating-component)
 - Live Site URL: [live-site](https://your-live-site-url.com)
 
 ## My process
@@ -70,4 +70,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 ```
-"# Interactive-rating-component" 
