@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [code](https://github.com/phangtono/Interactive-rating-component)
-- Live Site URL: [live-site](https://your-live-site-url.com)
+- Live Site URL: [live-site](https://calm-babka-081fc0.netlify.app/)
 
 ## My process
 
