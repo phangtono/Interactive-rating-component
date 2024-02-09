@@ -13,8 +13,7 @@
 <body>
   <main class="rating">
     <div class="rating__image">
-      <svg role="img" width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-        <title>star</title>
+      <svg role="img" width="17" height="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/>
       </svg>
     </div>
@@ -25,19 +24,19 @@
       <fieldset>
         <legend class="visuallyhidden">Rating Feedback</legend>
         <div class="rating__star">
-          <input type="radio" id="star-1" name="star" value="1">
+          <input type="radio" id="star-1" name="star" value="1" required>
           <label class="star" for="star-1">1</label>
     
-          <input type="radio" id="star-2" name="star" value="2">
+          <input type="radio" id="star-2" name="star" value="2" required>
           <label for="star-2">2</label>
     
-          <input type="radio" id="star-3" name="star" value="3">
+          <input type="radio" id="star-3" name="star" value="3" required>
           <label for="star-3">3</label>
     
-          <input type="radio" id="star-4" name="star" value="4">
+          <input type="radio" id="star-4" name="star" value="4" required>
           <label for="star-4">4</label>
     
-          <input type="radio" id="star-5" name="star" value="5">
+          <input type="radio" id="star-5" name="star" value="5" required>
           <label for="star-5">5</label>    
         </div>
         <button class="rating__submit" type="submit">Submit</button>

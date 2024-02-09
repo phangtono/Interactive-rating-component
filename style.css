@@ -65,7 +65,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: var(--bolder);
-    max-width: 320px;
+    max-width: 20rem;
 }
 
 .rating__image{

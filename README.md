@@ -11,6 +11,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Coding Suggestions and Improvements](#coding-suggestions-and-improvements)
 
 ## Overview
 
@@ -69,4 +70,55 @@ document.addEventListener('DOMContentLoaded', function() {
         thankyouScore.textContent = 'No star rating selected';
     }
 });
+```
+### Coding Suggestions and Improvements
+
+After receiving advice from mentor @grace : 
+
+![screenshot](./screenshot.png)
+
+I made improvements to my script :
+
+a. I added attr : required to the input element
+
+```html
+  <div class="rating__star">
+    <input type="radio" id="star-1" name="star" value="1" required>
+    <label class="star" for="star-1">1</label>
+
+    <input type="radio" id="star-2" name="star" value="2" required>
+    <label for="star-2">2</label>
+
+    <input type="radio" id="star-3" name="star" value="3" required>
+    <label for="star-3">3</label>
+
+    <input type="radio" id="star-4" name="star" value="4" required>
+    <label for="star-4">4</label>
+
+    <input type="radio" id="star-5" name="star" value="5" required>
+    <label for="star-5">5</label>    
+  </div>
+```
+I added aria-hidden="true" to the <svg> 
+```html
+    <div class="rating__image">
+      <svg role="img" width="17" height="16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/>
+      </svg>
+    </div>
+```
+Update max-width from 320px to 20rem
+```css
+.rating,
+.thankyou{
+    --circle-width: 2.5em;
+    --bolder:1.25em;
+    background-color: var(--clr-neutral-dark-blue);
+    border-radius: var(--bolder);
+    padding: var(--bolder);
+    display: flex;
+    flex-direction: column;
+    gap: var(--bolder);
+    max-width: 20rem;
+}
 ```
