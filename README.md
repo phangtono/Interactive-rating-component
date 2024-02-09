@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 After receiving advice from mentor @grace : 
 
-![screenshot](./screenshot.png)
+![screenshot](./grace.png)
 
 I made improvements to my script :
 
